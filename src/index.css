@@ -1,0 +1,33 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+  --color-moe-pink: #ffb7c5;
+  --color-moe-cream: #fff9f0;
+  --color-moe-mint: #b2f2bb;
+  --color-moe-lavender: #e5dbff;
+}
+
+@layer base {
+  body {
+    @apply bg-moe-cream text-slate-800 font-sans;
+    background-image: radial-gradient(#ffb7c5 0.5px, transparent 0.5px);
+    background-size: 20px 20px;
+  }
+}
+
+.notebook-spiral {
+  background: repeating-linear-gradient(
+    to bottom,
+    transparent,
+    transparent 15px,
+    #4a5568 15px,
+    #4a5568 20px
+  );
+}
+
+.paper-lines {
+  background-image: linear-gradient(#e2e8f0 1px, transparent 1px);
+  background-size: 100% 2rem;
+}
